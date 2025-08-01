@@ -5,21 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        body{
-            background-color: beige;
-            font-size: 30px;
-            border: 0ch;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fdf6f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #c49b8c;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .container p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .explore-btn {
+      background-color: #a05c4e;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .explore-btn:hover {
+      background-color: #8b3e33;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .container p {
+        font-size: 16px;
+      }
+
+      header {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>
-        Express your unique style with our curated collection of fashion jewellery.<br>
-         From statement pieces to delicate details,  find the perfect accessory to complement your individuality.<br>
-        Add a touch of sparkle to your everyday. Discover trendy and affordable fashion jewellery that elevates your look.
-        
-    </p>
-    
+  <header>
+    ✨ Sparkle Style Jewellery ✨
+  </header>
+
+  <div class="container">
+    <p>Express your unique style with our curated collection of fashion jewellery.</p>
+    <p>From statement pieces to delicate details, find the perfect accessory to complement your individuality.</p>
+    <p>Discover trendy and affordable fashion jewellery that elevates your look. Add a touch of sparkle to your everyday.</p>
+
+    <button class="explore-btn" onclick="alert('Coming soon: Our latest collection!')">Explore Collection</button>
+  </div>
+
+  <footer>
+    © 2025 Sparkle Style Jewellery | All rights reserved
+  </footer>
 </body>
 </html>
+    
